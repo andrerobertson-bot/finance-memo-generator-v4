@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Finance Memorandum Generator v3</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <div class="title">Finance Memorandum Generator</div>
+        <div class="sub">V3 · Playwright-only · SVG cover · Single-pass PDF</div>
+      </div>
+      <div class="actions">
+        <button id="btnVersion">/version</button>
+        <button id="btnGenerate" class="primary">Generate PDF</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Cover Fields</h2>
+
+        <label>Main Title</label>
+        <input id="mainTitle" value="PROPOSAL" />
+
+        <label>Subheadline 1</label>
+        <input id="subOne" value="Confidential" />
+
+        <label>Subheadline 2</label>
+        <input id="subTwo" value="Finance Memorandum" />
+
+        <label>Headline</label>
+        <input id="headline" value="Construction Finance" />
+
+        <label>Project Name</label>
+        <input id="projectName" value="Project Name Here" />
+
+        <label>Loan Amount</label>
+        <input id="loanAmount" value="$10,000,000" />
+
+        <label>Date</label>
+        <input id="dateText" value="13 January 2026" />
+
+        <label>Reference</label>
+        <input id="referenceNumber" value="REF-0001" />
+
+        <label>Company Line</label>
+        <input id="companyLine" value="Company Details Line" />
+
+        <div class="row">
+          <div>
+            <label>Cover Image</label>
+            <input id="coverImage" type="file" accept="image/*" />
+          </div>
+          <div>
+            <label>Footer Logo</label>
+            <input id="footerLogo" type="file" accept="image/*" />
+          </div>
+        </div>
+
+        <label>Footer Line (pages 2+)</label>
+        <input id="footerLine" value="Confidential — For intended recipient only" />
+      </section>
+
+      <section class="card">
+        <h2>Status</h2>
+        <pre id="status" class="status">Ready.</pre>
+      </section>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
