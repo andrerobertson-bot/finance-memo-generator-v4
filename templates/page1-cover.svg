@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="210mm" height="297mm" viewBox="0 0 210 297">
+
+  <!-- Top photo area -->
+  <rect x="0" y="0" width="210" height="175" fill="#ffffff"/>
+  <image href="{{COVER_IMAGE_URL}}"
+         x="0" y="0" width="210" height="175"
+         preserveAspectRatio="xMidYMid slice" />
+
+  <!-- Lower white area -->
+  <rect x="0" y="175" width="210" height="122" fill="#ffffff"/>
+
+  <!-- Center-aligned cover typography (mm coordinates) -->
+  <text x="105" y="195" text-anchor="middle"
+        font-family="Merriweather, Times New Roman" font-size="22" font-weight="700" fill="#111">
+    {{mainTitle}}
+  </text>
+
+  <text x="105" y="210" text-anchor="middle"
+        font-family="Merriweather, Times New Roman" font-size="20" font-style="italic" font-weight="900" fill="#111">
+    {{subOne}}
+  </text>
+  <text x="105" y="222" text-anchor="middle"
+        font-family="Merriweather, Times New Roman" font-size="20" font-style="italic" font-weight="900" fill="#111">
+    {{subTwo}}
+  </text>
+
+  <text x="105" y="238" text-anchor="middle"
+        font-family="Merriweather, Times New Roman" font-size="14" font-weight="700" fill="#111">
+    {{headline}}
+  </text>
+
+  <text x="105" y="255" text-anchor="middle"
+        font-family="Raleway, Arial" font-size="12" font-weight="500" fill="#444">
+    {{projectName}}
+  </text>
+
+  <text x="105" y="270" text-anchor="middle"
+        font-family="Raleway, Arial" font-size="16" font-weight="700" fill="#b8b8b8">
+    {{loanAmount}}
+  </text>
+
+  <!-- Reference line (label is usually in background; number is dynamic) -->
+  <text x="105" y="282" text-anchor="middle"
+        font-family="Raleway, Arial" font-size="9" font-weight="500" fill="#333">
+    {{referenceNumber}}
+  </text>
+
+  <text x="105" y="292" text-anchor="middle"
+        font-family="Raleway, Arial" font-size="8" font-weight="500" fill="#333">
+    {{companyLine}}
+  </text>
+</svg>
