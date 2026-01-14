@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finance Memo Generator</title>
+</head>
+<body>
+  <h2>Finance Memo Generator</h2>
+  <input id="companyName" placeholder="Company Name"/><br/>
+  <input id="projectName" placeholder="Project Name"/><br/>
+  <input id="loanAmount" placeholder="Loan Amount"/><br/>
+  <input id="date" placeholder="Date"/><br/>
+  <input id="referenceNumber" placeholder="Reference Number"/><br/>
+  <input id="companyLine" placeholder="Company Line"/><br/>
+  <button onclick="generate()">Generate PDF</button>
+
+<script>
+async function generate() {
+  const data = {
+    companyName: document.getElementById('companyName').value,
+    projectName: document.getElementById('projectName').value,
+    loanAmount: document.getElementById('loanAmount').value,
+    date: document.getElementById('date').value,
+    referenceNumber: document.getElementById('referenceNumber').value,
+    companyLine: document.getElementById('companyLine').value
+  };
+  const res = await fetch('/api/generate', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data)
+  });
+  const blob = await res.blob();
+  const url = URL.createObjectURL(blob);
+  window.open(url);
+}
+</script>
+</body>
+</html>
