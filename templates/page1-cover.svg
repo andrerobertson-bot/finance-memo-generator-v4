@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="595.32pt" height="841.92pt" viewBox="0 0 595.32 841.92">
+
+  <!-- Top photo area -->
+  <rect x="0" y="0" width="595.32" height="520" fill="#ffffff"/>
+  <image href="{{COVER_IMAGE_URL}}"
+         x="0" y="0" width="595.32" height="520"
+         preserveAspectRatio="xMidYMid slice" />
+
+  <!-- Lower white area -->
+  <rect x="0" y="520" width="595.32" height="321.92" fill="#ffffff"/>
+
+  <!-- Typography matches reference PDF coordinates (points) -->
+  <!-- Left margin = 197.21pt -->
+  <g fill="#000000">
+    <text x="197.21" y="544.28" font-family="Merriweather, 'Merriweather-Regular', serif"
+          font-size="23.04pt" dominant-baseline="hanging">{{mainTitle}}</text>
+
+    <text x="197.21" y="582.78" font-family="Merriweather, 'Merriweather-BlackItalic', serif"
+          font-size="21.96pt" font-style="italic" font-weight="900"
+          dominant-baseline="hanging">{{subOne}}</text>
+
+    <text x="197.21" y="607.77" font-family="Merriweather, 'Merriweather-BlackItalic', serif"
+          font-size="21.96pt" font-style="italic" font-weight="900"
+          dominant-baseline="hanging">{{subTwo}}</text>
+
+    <text x="197.21" y="645.32" font-family="Merriweather, 'Merriweather-Black', serif"
+          font-size="14.04pt" font-weight="900"
+          dominant-baseline="hanging">{{headline}}</text>
+  </g>
+
+  <g fill="#404040">
+    <text x="197.21" y="684.70" font-family="Raleway, 'Raleway-SemiBold', sans-serif"
+          font-size="14.04pt" font-weight="600"
+          dominant-baseline="hanging">{{projectName}}</text>
+  </g>
+
+  <g fill="#adb8bf">
+    <text x="197.21" y="719.98" font-family="Raleway, 'Raleway-SemiBold', sans-serif"
+          font-size="14.04pt" font-weight="600"
+          dominant-baseline="hanging">{{loanAmount}}</text>
+  </g>
+
+  <g fill="#595959">
+    <text x="197.21" y="755.98" font-family="Raleway, 'Raleway-Regular', sans-serif"
+          font-size="8.04pt" dominant-baseline="hanging">Our Reference Number:</text>
+  </g>
+
+  <g fill="#404040">
+    <text x="287.71" y="755.08" font-family="Raleway, 'Raleway-Medium', sans-serif"
+          font-size="9pt" font-weight="500"
+          dominant-baseline="hanging">{{referenceNumber}}</text>
+  </g>
+
+  <g fill="#404040">
+    <text x="197.21" y="774.00" font-family="Raleway, 'Raleway-Regular', sans-serif"
+          font-size="10.5pt" dominant-baseline="hanging">{{companyLine}}</text>
+  </g>
+</svg>
